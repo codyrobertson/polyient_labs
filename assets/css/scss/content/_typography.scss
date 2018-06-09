@@ -73,8 +73,10 @@ small,
 .display-2,
 .display-3,
 .display-4 {
-    font-weight: 600;
+    font-weight: 800 !default;
+    font-family: "Poppins", sans-serif, "Helvetica";
     text-transform: capitalize !default;
+    letter-spacing: 1px;
 }
 
 h1,
@@ -90,7 +92,7 @@ h6,
 .h5,
 .h6 {
     font-family: $font-title;
-    font-weight: 600;
+    font-weight: 800;
     color: $color-title;
     letter-spacing: 1px;
     line-height: 1.6;
@@ -339,10 +341,12 @@ $color in $colors {
         font-size: $terra
     }
     .display-2 {
-        font-size: $giga
+        font-size: $giga;
+        font-weight: 800;
     }
     .display-3 {
-        font-size: $mega
+        font-size: $mega;
+        font-weight: 800;
     }
     .display-4 {
         font-size: $mega
@@ -395,7 +399,8 @@ $color in $colors {
         font-size: $alpha
     }
     .display-2 {
-        font-size: $alpha
+        font-size: $alpha;
+        letter-spacing: 1px;
     }
     .display-3 {
         font-size: $beta

@@ -45,12 +45,12 @@ Roboto,
 "Helvetica Neue",
 Arial,
 sans-serif;
-$font-body: "Founders Grotesk",
+$font-body: "Calibre-Regular",
 "Work Sans" sans-serif;
-$font-title: "Founders Grotesk",
+$font-title: "Poppins",
 "Work Sans",
 sans-serif;
-$font-quote: "Founders Grotesk",
+$font-quote: "Calibre-Regular",
 "Work Sans",
 Serif;
 $font-icon-fontawesome: FontAwesome;
@@ -59,13 +59,13 @@ $font-icon-themify: themify;
 // Colors
 //
 // Context colors
-$color-primary: #3883F7 !default;
+$color-primary: #00BCDD !default;
 $color-secondary: #e4e7ea !default;
-$color-success: #79DB82 !default;
-$color-info: #6FA5FA !default;
-$color-warning: #F3CF4B !default;
-$color-danger: #F35A55 !default;
-$color-dark: #040405!default;
+$color-success: #00DCAD !default;
+$color-info: #9058FF !default;
+$color-warning: #DE9701 !default;
+$color-danger: #DD4201 !default;
+$color-dark: #1D1D1B!default;
 // Pale context colors
 $color-pale-primary: #F6F7F8 !default;
 $color-pale-secondary: #f7fafc !default;
@@ -82,13 +82,13 @@ $color-bg-body: #ffffff !default;
 $color-bg-dark: $color-dark !default;
 $color-bg-gray: #f8f8f8 !default;
 // Text colors
-$color-title: #0F0C0C !default;
-$color-subtitle:#44484E !default;
-$color-text: #727983 !default;
-$color-text-secondary: #CBC9C8 !default;
+$color-title: #1D1D1B !default;
+$color-subtitle:#4A4A49 !default;
+$color-text: #617270 !default;
+$color-text-secondary: #6D6D73 !default;
 $color-text-light: #b5b9bf !default;
-$color-text-disable: #a5b3c7 !default;
-$color-text-placeholder: #b7bbbd !default;
+$color-text-disable: #B9C0C2 !default;
+$color-text-placeholder: #B9C0C2 !default;
 // Divider color
 $color-divider: #ebebeb !default;
 $color-divider-light: #f1f2f3 !default;

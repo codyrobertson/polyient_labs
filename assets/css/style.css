@@ -37,6 +37,10 @@
         max-height: 30%;
     }
     
+    #video {
+        position: fixed;
+    }
+    
     @media (max-width: 768px) {
         .thesaas-sections-split .section,
         .thesaas-sections-split .main-content .site-footer {

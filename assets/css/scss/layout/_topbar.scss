@@ -78,7 +78,7 @@
         display: none;
     }
     @include media-down(sm) {
-        max-width: 100px !important;
+        max-width: 200px !important;
     }
 }
 

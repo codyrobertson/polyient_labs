@@ -830,6 +830,11 @@ jQuery.expr[':'].search = function(a, i, m) {
 
 //Icons Attr Changes
 $("i, #icon-color").attr('data-vi-primary', '#00BCDD', 'data-vi-accent', '#00DCAD', 'data-vi-prop', '#DDDEE1');
+$("i#icon-color-purple").attr('data-vi-primary', '#9058FF', 'data-vi-accent', '#563B8D', 'data-vi-prop', '#DDDEE1');
+
+$("#ideas").hover(function() {
+    $(this).attr("data-aos", "zoom-out-down")
+});
 
 
 //Typography

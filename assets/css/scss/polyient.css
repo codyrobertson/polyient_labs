@@ -332,7 +332,7 @@ pre {
 }
 
 [data-type].text-secondary+.typed-cursor {
-    color: #e4e7ea;
+    color: #DDDEE1;
 }
 
 [data-type].text-success+.typed-cursor {
@@ -1215,7 +1215,7 @@ h1.card-title {
 }
 
 .badge-secondary {
-    background-color: #e4e7ea;
+    background-color: #DDDEE1;
 }
 
 .badge-secondary[href]:focus,
@@ -1281,7 +1281,7 @@ h1.card-title {
 
 .badge-secondary {
     color: #b5b9bf;
-    background-color: #e4e7ea;
+    background-color: #DDDEE1;
 }
 
 .badge-secondary[href]:focus,
@@ -1584,8 +1584,8 @@ button:focus {
 
 .btn-secondary,
 .btn-secondary:hover {
-    background-color: #e4e7ea;
-    border-color: #e4e7ea;
+    background-color: #DDDEE1;
+    border-color: #DDDEE1;
     color: #727983;
 }
 
@@ -1600,8 +1600,8 @@ button:focus {
 
 .btn-secondary.disabled,
 .btn-secondary:disabled {
-    background-color: #e4e7ea;
-    border-color: #e4e7ea;
+    background-color: #DDDEE1;
+    border-color: #DDDEE1;
     opacity: 0.5;
 }
 
@@ -1829,15 +1829,15 @@ button:focus {
 }
 
 .btn-secondary-outline {
-    color: #e4e7ea;
+    color: #DDDEE1;
     background-color: transparent;
-    border-color: #e4e7ea;
+    border-color: #DDDEE1;
 }
 
 .btn-secondary-outline:hover {
     color: #727983;
-    background-color: #e4e7ea;
-    border-color: #e4e7ea;
+    background-color: #DDDEE1;
+    border-color: #DDDEE1;
 }
 
 .btn-secondary-outline:active,
@@ -1943,15 +1943,15 @@ button:focus {
 }
 
 .btn-outline.btn-secondary {
-    color: #e4e7ea;
+    color: #DDDEE1;
     background-color: transparent;
-    border-color: #e4e7ea;
+    border-color: #DDDEE1;
 }
 
 .btn-outline.btn-secondary:hover {
     color: #727983;
-    background-color: #e4e7ea;
-    border-color: #e4e7ea;
+    background-color: #DDDEE1;
+    border-color: #DDDEE1;
 }
 
 .btn-outline.btn-secondary:active,
@@ -6198,7 +6198,7 @@ ul.flexbox {
 }
 
 .border-secondary {
-    border-color: #e4e7ea;
+    border-color: #DDDEE1;
 }
 
 .border-success {
@@ -6243,7 +6243,7 @@ ul.flexbox {
 }
 
 .bg-secondary {
-    background-color: #e4e7ea;
+    background-color: #DDDEE1;
     color: #fff;
 }
 
@@ -6343,7 +6343,7 @@ ul.flexbox {
 }
 
 .text-secondary {
-    color: #e4e7ea !important;
+    color: #DDDEE1 !important;
 }
 
 .text-success {
@@ -6397,7 +6397,7 @@ a.text-primary:focus {
 
 a.text-secondary:hover,
 a.text-secondary:focus {
-    color: #e4e7ea !important;
+    color: #DDDEE1 !important;
 }
 
 a.text-info:hover,
@@ -6427,7 +6427,7 @@ a.text-danger:focus {
 
 .hover-secondary:hover,
 .hover-secondary:focus {
-    color: #e4e7ea !important;
+    color: #DDDEE1 !important;
 }
 
 .hover-success:hover,

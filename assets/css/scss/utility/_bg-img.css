@@ -1,0 +1,131 @@
+.bg-img {
+  position: relative;
+  border-bottom: none;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+@media (max-width: 640px) {
+  .bg-fixed {
+    background-attachment: initial;
+  }
+}
+
+.bg-repeat {
+  background-repeat: repeat;
+  background-size: auto;
+}
+
+.bg-img-left {
+  background-position: left center;
+}
+
+.bg-img-right {
+  background-position: right center;
+}
+
+[data-overlay],
+[data-overlay-light] {
+  position: relative;
+}
+
+[data-overlay]::before,
+[data-overlay-light]::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #191919;
+}
+
+[data-overlay-light]::before {
+  background: #fff;
+}
+
+[data-overlay-primary]::before {
+  background: linear-gradient(-80deg, #9058FF, #00DCAD, #00BCDD);
+  background-size: 1000% 1000%;
+  -webkit-animation: Gradient 28s ease infinite;
+  -moz-animation: Gradient 28s ease infinite;
+  animation: Gradient 28s ease infinite;
+}
+
+[data-overlay="1"]::before {
+  opacity: 0.1;
+}
+
+[data-overlay="2"]::before {
+  opacity: 0.2;
+}
+
+[data-overlay="3"]::before {
+  opacity: 0.3;
+}
+
+[data-overlay="4"]::before {
+  opacity: 0.4;
+}
+
+[data-overlay="5"]::before {
+  opacity: 0.5;
+}
+
+[data-overlay="6"]::before {
+  opacity: 0.6;
+}
+
+[data-overlay="7"]::before {
+  opacity: 0.7;
+}
+
+[data-overlay="8"]::before {
+  opacity: 0.8;
+}
+
+[data-overlay="9"]::before {
+  opacity: 0.9;
+}
+
+[data-overlay-light="1"]::before {
+  opacity: 0.1;
+}
+
+[data-overlay-light="2"]::before {
+  opacity: 0.2;
+}
+
+[data-overlay-light="3"]::before {
+  opacity: 0.3;
+}
+
+[data-overlay-light="4"]::before {
+  opacity: 0.4;
+}
+
+[data-overlay-light="5"]::before {
+  opacity: 0.5;
+}
+
+[data-overlay-light="6"]::before {
+  opacity: 0.6;
+}
+
+[data-overlay-light="7"]::before {
+  opacity: 0.7;
+}
+
+[data-overlay-light="8"]::before {
+  opacity: 0.8;
+}
+
+[data-overlay-light="9"]::before {
+  opacity: 0.9;
+}

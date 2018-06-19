@@ -3,13 +3,11 @@
     top: 0;
     left: 0;
     right: 0;
-    background-color: white;
+    background-color: transparent;
     height: $navbar-height;
-    padding-bottom: calc(30%, $navbar-height);
     border-radius: 0;
-    border: 2px solid $color-divider;
     z-index: $zindex-navbar;
-    transition: margin-left .5s ease-in-out;
+    transition: margin-left .5s;
     .body-scrolled &.topbar-sticky {
         position: fixed;
         height: $navbar-height-scrolled;
@@ -49,9 +47,9 @@
 // Toggler
 //
 .topbar-toggler {
-    align-self: flex-end;
-    padding: .55rem .8rem;
-    font-size: 1.25rem;
+    align-self: flex-start;
+    padding: .25rem .75rem;
+    font-size: 1.255rem;
     line-height: 1;
     background: 0 0;
     border: 1px solid transparent;
@@ -70,15 +68,17 @@
     float: none;
     font-size: 0.875rem;
     line-height: 1;
-    height: auto;
     img {
-        max-height: 60px;
+        max-height: 100;
+        min-width: 200px;
+        min-height: 100px;
+        display: none;
     }
     .logo-inverse {
         display: none;
     }
     @include media-down(sm) {
-        max-width: 100px !important;
+        max-width: 100%;
     }
 }
 
@@ -97,9 +97,8 @@
 .topbar-nav {
     display: inline-flex;
     flex-wrap: nowrap;
-    font-weight: 300;
+    font-weight: 600;
     font-size: .75rem;
-    padding-top: 10px;
     line-height: $navbar-height;
     z-index: $zindex-navbar-nav;
     .nav-item {
@@ -116,17 +115,15 @@
     .nav-link {
         color: $color-text;
         letter-spacing: 1px;
-        text-transform: capitalize;
-        font-weight: 500;
-        opacity: 1;
+        text-transform: uppercase;
+        font-weight: 600;
+        opacity: .6;
         padding: 0;
-        font-size: 1rem;
         transition: .3s;
         &:hover,
         &:focus,
         &.active {
-            opacity: 0.8;
-            color: $color-primary;
+            opacity: 1;
         }
         &.active {
             font-weight: 600;
@@ -149,7 +146,6 @@
     }
     .topbar-right {
         text-align: right;
-        padding-top: 13px;
     }
 }
 
@@ -398,4 +394,5 @@
         left: -260px;
         width: 260px !important;
     }
+    .logo-default {}
 }

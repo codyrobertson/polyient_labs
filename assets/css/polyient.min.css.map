@@ -1,8 +1,8 @@
 {
     "version": 3,
-    "file": "thesaas.min.css",
+    "file": "polyient.min.css",
     "sources": [
-        "scss/thesaas.scss",
+        "scss/polyient.scss",
         "scss/_variables.scss",
         "scss/_mixins.scss",
         "scss/content/_typography.scss",

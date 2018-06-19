@@ -9,12 +9,12 @@
 
 function($, window) {
 
-    var thesaas = {
+    var polyient = {
         name: 'RealBlocks',
         version: '1.4.5',
     };
 
-    thesaas.defaults = {
+    polyient.defaults = {
         googleApiKey: null,
         googleAnalyticsId: null,
         smoothScroll: true,
@@ -22,7 +22,7 @@ function($, window) {
 
     // Breakpoint values
     //
-    thesaas.breakpoint = {
+    polyient.breakpoint = {
         xs: 576,
         sm: 768,
         md: 992,
@@ -32,22 +32,22 @@ function($, window) {
 
     // Config application
     //
-    thesaas.config = function(options) {
-        //$.extend(true, thesaas.defaults, options);
+    polyient.config = function(options) {
+        //$.extend(true, polyient.defaults, options);
 
         // Rteurn config value
         if (typeof options === 'string') {
-            return thesaas.defaults[options];
+            return polyient.defaults[options];
         }
 
 
         // Save configs
-        $.extend(true, thesaas.defaults, options);
+        $.extend(true, polyient.defaults, options);
 
 
         // Make necessary changes
         //
-        if (!thesaas.defaults.smoothScroll) {
+        if (!polyient.defaults.smoothScroll) {
             SmoothScroll.destroy();
         }
 
@@ -56,13 +56,13 @@ function($, window) {
         // Google map
         // 
         if ($('[data-provide~="map"]').length && window["google.maps.Map"] === undefined) {
-            $.getScript("https://maps.googleapis.com/maps/api/js?key=" + thesaas.defaults.googleApiKey + "&callback=thesaas.map");
+            $.getScript("https://maps.googleapis.com/maps/api/js?key=" + polyient.defaults.googleApiKey + "&callback=polyient.map");
         }
 
 
         // Google Analytics
         //
-        if (thesaas.defaults.googleAnalyticsId) {
+        if (polyient.defaults.googleAnalyticsId) {
             (function(i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;
                 i[r] = i[r] || function() {
@@ -75,7 +75,7 @@ function($, window) {
                 m.parentNode.insertBefore(a, m)
             })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-            ga('create', thesaas.defaults.googleAnalyticsId, 'auto');
+            ga('create', polyient.defaults.googleAnalyticsId, 'auto');
             ga('send', 'pageview');
         }
 
@@ -85,20 +85,20 @@ function($, window) {
 
     // Initialize the application
     //
-    thesaas.init = function() {
+    polyient.init = function() {
 
 
-        thesaas.topbar();
-        thesaas.parallax();
-        thesaas.carousel();
-        thesaas.scrolling();
-        thesaas.counter();
-        thesaas.aos();
-        thesaas.typed();
-        thesaas.contact();
-        thesaas.mailer();
-        thesaas.constellation();
-        thesaas.shuffle();
+        polyient.topbar();
+        polyient.parallax();
+        polyient.carousel();
+        polyient.scrolling();
+        polyient.counter();
+        polyient.aos();
+        polyient.typed();
+        polyient.contact();
+        polyient.mailer();
+        polyient.constellation();
+        polyient.shuffle();
 
 
         // Lightbox
@@ -181,7 +181,7 @@ function($, window) {
     //----------------------------------------------------/
     // Parallax
     //----------------------------------------------------/
-    thesaas.parallax = function() {
+    polyient.parallax = function() {
 
         $('[data-parallax]').each(function() {
             var parallax = $(this);
@@ -195,7 +195,7 @@ function($, window) {
                 options.speed = 0.6;
             }
 
-            options = $.extend(options, thesaas.getDataOptions(parallax));
+            options = $.extend(options, polyient.getDataOptions(parallax));
 
             parallax.parallax(options);
 
@@ -208,7 +208,7 @@ function($, window) {
     //----------------------------------------------------/
     // Google map
     //----------------------------------------------------/
-    thesaas.map = function() {
+    polyient.map = function() {
 
         $('[data-provide~="map"]').each(function() {
 
@@ -222,7 +222,7 @@ function($, window) {
                 style: ''
             }
 
-            setting = $.extend(setting, thesaas.getDataOptions($(this)));
+            setting = $.extend(setting, polyient.getDataOptions($(this)));
 
             var map = new google.maps.Map($(this)[0], {
                 center: {
@@ -275,7 +275,7 @@ function($, window) {
     //----------------------------------------------------/
     // Carousel
     //----------------------------------------------------/
-    thesaas.carousel = function() {
+    polyient.carousel = function() {
 
         $('.swiper-container').each(function() {
             var options = {
@@ -305,7 +305,7 @@ function($, window) {
                 options.paginationClickable = true;
             }
 
-            options = $.extend(options, thesaas.getDataOptions(swiper));
+            options = $.extend(options, polyient.getDataOptions(swiper));
 
             new Swiper(swiper, options);
         });
@@ -326,7 +326,7 @@ function($, window) {
     //----------------------------------------------------/
     // jQuery CountTo and Count Down
     //----------------------------------------------------/
-    thesaas.counter = function() {
+    polyient.counter = function() {
 
         // CountTo
         var waypoints = $('[data-provide~="counter"]:not(.counted)').waypoint({
@@ -380,7 +380,7 @@ function($, window) {
     //----------------------------------------------------/
     // Animate on scroll
     //----------------------------------------------------/
-    thesaas.aos = function() {
+    polyient.aos = function() {
         AOS.init({
             offset: 220,
             duration: 1500,
@@ -405,7 +405,7 @@ function($, window) {
     //----------------------------------------------------/
     // Topbar functionality
     //----------------------------------------------------/
-    thesaas.topbar = function() {
+    polyient.topbar = function() {
 
         var body = $('body');
         $(window).on('scroll', function() {
@@ -474,7 +474,7 @@ function($, window) {
     //----------------------------------------------------/
     // Typed
     //----------------------------------------------------/
-    thesaas.typed = function() {
+    polyient.typed = function() {
 
         $('[data-type]').each(function() {
             var strings = $(this).data('type').split(',');
@@ -486,7 +486,7 @@ function($, window) {
                 loop: true
             };
 
-            options = $.extend(options, thesaas.getDataOptions($(this)));
+            options = $.extend(options, polyient.getDataOptions($(this)));
             var typed = new Typed($(this)[0], options);
         });
 
@@ -501,7 +501,7 @@ function($, window) {
             loop: true
           }
 
-          options = $.extend( options, thesaas.getDataOptions(el) );
+          options = $.extend( options, polyient.getDataOptions(el) );
 
           el.typed(options);
         });
@@ -514,7 +514,7 @@ function($, window) {
     //----------------------------------------------------/
     // Contact form - This is depricated
     //----------------------------------------------------/
-    thesaas.contact = function() {
+    polyient.contact = function() {
 
         $(document).on('click', '#contact-send', function() {
 
@@ -557,7 +557,7 @@ function($, window) {
     //----------------------------------------------------/
     // Mailer function
     //----------------------------------------------------/
-    thesaas.mailer = function() {
+    polyient.mailer = function() {
 
         var validEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -626,7 +626,7 @@ function($, window) {
     //----------------------------------------------------/
     // Constellation
     //----------------------------------------------------/
-    thesaas.constellation = function() {
+    polyient.constellation = function() {
         var color = 'rgba(255, 255, 255, .8)',
             distance = 120;
 
@@ -665,7 +665,7 @@ function($, window) {
     //----------------------------------------------------/
     // Shuffle.js
     //----------------------------------------------------/
-    thesaas.shuffle = function() {
+    polyient.shuffle = function() {
         if (undefined === window['Shuffle'] || 0 === $('[data-provide="shuffle"]').length) {
             return;
         }
@@ -737,12 +737,12 @@ function($, window) {
 
     // Convert data-attributes options to Javascript object
     //
-    thesaas.getDataOptions = function(el, castList) {
+    polyient.getDataOptions = function(el, castList) {
         var options = {};
 
         $.each($(el).data(), function(key, value) {
 
-            key = thesaas.dataToOption(key);
+            key = polyient.dataToOption(key);
 
             // Escape data-provide
             if (key == 'provide') {
@@ -778,27 +778,27 @@ function($, window) {
 
     // Convert fooBarBaz to foo-bar-baz
     //
-    thesaas.optionToData = function(name) {
+    polyient.optionToData = function(name) {
         return name.replace(/([A-Z])/g, "-$1").toLowerCase();
     }
 
 
     // Convert foo-bar-baz to fooBarBaz
     //
-    thesaas.dataToOption = function(name) {
+    polyient.dataToOption = function(name) {
         return name.replace(/-([a-z])/g, function(x) { return x[1].toUpperCase(); });
     }
 
 
 
-    window.thesaas = thesaas;
+    window.polyient = polyient;
 }(jQuery, window);
 
 
 
 
 $(function() {
-    thesaas.init();
+    polyient.init();
 });
 
 

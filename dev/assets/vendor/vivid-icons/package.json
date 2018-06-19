@@ -1,0 +1,110 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "vivid-icons",
+        "scope": null,
+        "escapedName": "vivid-icons",
+        "name": "vivid-icons",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/codyrobertson/github/polyient_labs/assets/vendor/icons"
+    ]
+  ],
+  "_from": "vivid-icons@latest",
+  "_id": "vivid-icons@1.0.4",
+  "_inCache": true,
+  "_location": "/vivid-icons",
+  "_nodeVersion": "8.9.3",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/vivid-icons_1.0.4_1529321034224_0.3712521340153918"
+  },
+  "_npmUser": {
+    "name": "nitishkmrk",
+    "email": "nitishkmrk@gmail.com"
+  },
+  "_npmVersion": "5.8.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "vivid-icons",
+    "scope": null,
+    "escapedName": "vivid-icons",
+    "name": "vivid-icons",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/vivid-icons/-/vivid-icons-1.0.4.tgz",
+  "_shasum": "f1dcd2cfa3c1b8bd181d4212da12132d2e661e70",
+  "_shrinkwrap": null,
+  "_spec": "vivid-icons",
+  "_where": "/Users/codyrobertson/github/polyient_labs/assets/vendor/icons",
+  "author": {
+    "name": "Nitish Kumar",
+    "email": "support@webkul.com"
+  },
+  "bugs": {
+    "url": "https://github.com/webkul/vivid/issues"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "jsdom": "^11.11.0"
+  },
+  "description": "a JavaScript library which is built to easily customize and use the SVG Icons with a blaze.",
+  "devDependencies": {
+    "npm-run-all": "^4.1.3",
+    "webpack": "^4.9.1",
+    "webpack-cli": "^2.1.4"
+  },
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-Q+oMu7lkL8alYvufGFpLQHh2DKEiQuS6+Mz+NpbO4aCGCtJOPp74xYysw7ADGyInvyFEVy4U/qo1MIaxgJM+NA==",
+    "shasum": "f1dcd2cfa3c1b8bd181d4212da12132d2e661e70",
+    "tarball": "https://registry.npmjs.org/vivid-icons/-/vivid-icons-1.0.4.tgz",
+    "fileCount": 115,
+    "unpackedSize": 2931311,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbJ5ZKCRA9TVsSAnZWagAA4KAP/AqUlxyfJtfzbycnATgC\nui5GxMxpStZK4dtHNHH8CJlBKBv8ggrN+2L9un7JNICX81Gfn3OptVgEfPY7\nbyawS9Zj565jtGdIjapIV7KOaPo/yDeFB39c3kOyyfzIixhErd55ax+se4s8\nLl1XfkfNrJpGijtEjggcvFcCyBKgpB3Q6SSL7MmbBob5dpYcvBdbVCWsWwyL\n6Z4iVixuyzznEqUuInzwALTYL+2iuwmHWKvsmDFCFqLVq8KoAa6ZwQ/6TvZF\n98cu1kgWo3sUQ9fQS8hCeim6ct83ipzDShfs0RGttvnZEAzeT0/gkc7quDTu\nFZVVCSUvIWSQVvkWaOJ9RqIe8RIyYJ/KwVtGdRN8mFcdErjMK+fPxCvSUUNE\npwct80GewxAVQOHwAvB5zYj4L+0ZnRrMIkk7RoNPkg1lx00eWSB8f38sr4p1\nFo7SPHjBVBuPZ4VUqCoz6aDtNZriTBJkEzrko3OqrK9m/rT4SMSnOZSKigsJ\nfPM5lc8KRgh3lOsdURlsrVQ5m8OF3rDXqzlvHnLjsd3lVK/YkCV4RrSCyu9I\nUUi4cCbGXaO7BSDeX2lsNa+4lO+kzCoJujJ0XZQOtivUn5vZSEJ8kc/5Makg\nizxhVLkL5gYrUJal5PrhyqCzr/wK9kmWY9HbcrZ5jBR9HyM/dyl+kHgMG4ZK\nqDIk\r\n=TSDs\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "gitHead": "f482c93d8771cf5a1397a085d67dff0d475b9bc4",
+  "homepage": "https://github.com/webkul/vivid#readme",
+  "keywords": [
+    "svg",
+    "icon",
+    "icons",
+    "react",
+    "inline",
+    "svgicon",
+    "svgicons",
+    "vivid"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "nitishkmrk",
+      "email": "nitishkmrk@gmail.com"
+    }
+  ],
+  "name": "vivid-icons",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webkul/vivid.git"
+  },
+  "scripts": {
+    "build": "run-s build-json build-html build-bundle build-bundle-minify show-message open-html",
+    "build-bundle": "webpack --config webpack.dev.js",
+    "build-bundle-minify": "webpack --config webpack.prod.js",
+    "build-html": "node ./src/show.js",
+    "build-json": "node ./src/extract.js",
+    "open-html": "open ./dist/preview.html",
+    "show-message": "node ./src/success.js"
+  },
+  "version": "1.0.4"
+}

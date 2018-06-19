@@ -5357,7 +5357,7 @@ ul.flexbox {
 }
 
 .topbar-brand img {
-    max-height: 50px;
+    max-height: 100px;
 }
 
 .topbar-brand .logo-inverse {
@@ -5367,6 +5367,9 @@ ul.flexbox {
 @media (max-width: 767px) {
     .topbar-brand {
         max-width: 150px;
+    }
+    .topbar-brand img {
+        transform: scale(2);
     }
 }
 

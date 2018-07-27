@@ -15,6 +15,39 @@
     display: none;
 }
 
+.btn-application {
+    color: #ffffff;
+    background-color: #00DCAD;
+    border-color: #00DCAD;
+}
+
+.btn-application:hover {
+    color: #F1F2F2;
+    background-color: #07AC87;
+    border-color: #07AC87;
+}
+
+.btn-application:focus,
+.btn-application.focus {
+    -webkit-box-shadow: 0 0 0 2px hsla(167, 92%, 35%, 0.625);
+    box-shadow: 0 0 0 2px rgba(204, 204, 204, 0.5);
+}
+
+.btn-application.disabled,
+.btn-application:disabled {
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.btn-application:active,
+.btn-application.active,
+.show>.btn-application.dropdown-toggle {
+    color: #fff;
+    background-color: #07AC87;
+    background-image: none;
+    border-color: #0D7C64;
+}
+
 .thesaas-sections-split .section-info {
     text-align: center;
     text-transform: uppercase;
@@ -41,9 +74,9 @@
     background: -webkit-radial-gradient( rgba(0, 188, 221, 0.479), rgba(144, 88, 255, 0.432), RGBA(222, 151, 1, 0.5));
     background: -o-radial-gradient( rgba(0, 188, 221, 0.479), rgba(144, 88, 255, 0.432), RGBA(222, 151, 1, 0.5));
     background: radial-gradient( rgba(0, 188, 221, 0.479), rgba(144, 88, 255, 0.432), RGBA(222, 151, 1, 0.5));
-    background: -webkit-linear-gradient(170deg, #9058FF, #00DCAD, #00BCDD);
-    background: -o-linear-gradient(170deg, #9058FF, #00DCAD, #00BCDD);
-    background: linear-gradient(-80deg, #9058FF, #00DCAD, #00BCDD);
+    background: -webkit-linear-gradient(170deg, #DE9701, #00BCDD, #00DCAD);
+    background: -o-linear-gradient(170deg, #DE9701, #00BCDD, #00DCAD);
+    background: linear-gradient(-80deg, #DE9701, #00BCDD, #00DCAD);
     background-size: 1000% 1000%;
     -webkit-animation: Gradient 28s ease infinite;
     animation: Gradient 28s ease infinite;
@@ -53,9 +86,9 @@
     background: -webkit-radial-gradient( rgba(0, 188, 221, 0.479), rgba(144, 88, 255, 0.432), RGBA(222, 151, 1, 0.5));
     background: -o-radial-gradient( rgba(0, 188, 221, 0.479), rgba(144, 88, 255, 0.432), RGBA(222, 151, 1, 0.5));
     background: radial-gradient( rgba(0, 188, 221, 0.479), rgba(144, 88, 255, 0.432), RGBA(222, 151, 1, 0.5));
-    background: -webkit-linear-gradient(170deg, #00BCDD, #DD4201, #563B8D);
-    background: -o-linear-gradient(170deg, #00BCDD, #DD4201, #563B8D);
-    background: linear-gradient(-80deg, #00BCDD, #DD4201, #563B8D);
+    background: -webkit-linear-gradient(170deg, #DD4201, #DE9701, #9058FF);
+    background: -o-linear-gradient(170deg, #DD4201, #DE9701, #9058FF);
+    background: linear-gradient(-80deg, #DD4201, #DE9701, #9058FF);
     background-size: 1000% 1000%;
     -webkit-animation: Gradient 28s ease infinite;
     animation: Gradient 28s ease infinite;

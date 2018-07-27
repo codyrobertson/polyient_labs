@@ -49,7 +49,7 @@
 .topbar-toggler {
     align-self: flex-start;
     padding: .25rem .75rem;
-    font-size: 1.255rem;
+    font-size: 1.25rem;
     line-height: 1;
     background: 0 0;
     border: 1px solid transparent;
@@ -69,16 +69,13 @@
     font-size: 0.875rem;
     line-height: 1;
     img {
-        max-height: 100;
-        min-width: 200px;
-        min-height: 100px;
-        display: none;
+        max-height: 50px;
     }
     .logo-inverse {
         display: none;
     }
     @include media-down(sm) {
-        max-width: 100%;
+        max-width: 150px;
     }
 }
 
@@ -254,11 +251,17 @@
         .logo-inverse {
             display: none;
         }
+        #color {
+            background: red !important;
+        }
     }
     .topbar-nav>.nav-item>.nav-link,
     .topbar-toggler,
     .drawer-toggler {
         color: $color-text;
+    }
+    .topbar-nav>a.btn {
+        background: $color-primary;
     }
 }
 
@@ -394,5 +397,4 @@
         left: -260px;
         width: 260px !important;
     }
-    .logo-default {}
 }

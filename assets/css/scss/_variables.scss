@@ -47,7 +47,7 @@ Arial,
 sans-serif;
 $font-body: "Calibre-Regular",
 "Work Sans" sans-serif;
-$font-title: "Poppins",
+$font-title: "Montserrat",
 "Work Sans",
 sans-serif;
 $font-quote: "Calibre-Regular",
@@ -59,8 +59,8 @@ $font-icon-themify: themify;
 // Colors
 //
 // Context colors
-$color-primary: #00BCDD !default;
-$color-secondary:#DDDEE1 !default;
+$color-primary: #00bcdd !default;
+$color-secondary: #DDDEE1 !default;
 $color-success: #00DCAD !default;
 $color-info: #9058FF !default;
 $color-warning: #DE9701 !default;
@@ -81,10 +81,11 @@ $color-bg-light: #f5f6f7 !default;
 $color-bg-body: #ffffff !default;
 $color-bg-dark: $color-dark !default;
 $color-bg-gray: #f8f8f8 !default;
+$color-bg-primary: $color-primary !default;
 // Text colors
-$color-title: #1D1D1B !default;
+$color-title: lighten(#16444A, 0.8) !default;
 $color-subtitle:#4A4A49 !default;
-$color-text: #617270 !default;
+$color-text: #6D6D73 !default;
 $color-text-secondary: #6D6D73 !default;
 $color-text-light: #b5b9bf !default;
 $color-text-disable: #B9C0C2 !default;

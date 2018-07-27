@@ -1,12 +1,11 @@
 .btn {
-    font-weight: 400;
-    font-size: 14px;
-    padding: 8px 25px;
-    vertical-align: middle;
+    font-weight: 600;
+    font-size: 11px;
+    padding: 7px 26px;
     line-height: inherit;
-    color: $color-text-secondary;
+    color: $color-text-primary;
     letter-spacing: 1.7px;
-    text-transform: capitalize;
+    text-transform: uppercase;
     border-radius: 2px;
     background-color: #fff;
     border-color: $color-divider;
@@ -42,9 +41,8 @@ button:focus {
 
 .btn-group-sm>.btn,
 .btn-sm {
-    font-size: 12px;
+    font-size: 11px;
     padding: 4px 20px;
-    vertical-align: middle;
 }
 
 .btn-group-lg>.btn,
@@ -91,7 +89,7 @@ button:focus {
 // Colors
 //----------------------------------------------------/
 .btn-primary {
-    @include btn-colors($color-primary, 8%);
+    @include btn-colors($color-dark, 1%);
 }
 
 .btn-success {

@@ -1,0 +1,9 @@
+[data-aos="tada"] {
+    transform: translateY(200);
+    opacity: 0;
+    transition-property: transform, opacity;
+    &.aos-animate {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

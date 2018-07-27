@@ -1,5 +1,5 @@
 body {
-    font-family: $font-body;
+    font-family: "Montserrat";
     color: $color-text;
     font-weight: 300;
     font-size: $epsilon;
@@ -73,9 +73,8 @@ small,
 .display-2,
 .display-3,
 .display-4 {
-    font-weight: 800 !default;
-    font-family: "Poppins", sans-serif, "Helvetica";
-    text-transform: capitalize !default;
+    font-family: "Montserrat", sans-serif, "Helvetica";
+    text-transform: capitalize;
     letter-spacing: 1px;
 }
 

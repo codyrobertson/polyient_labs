@@ -1,82 +1,88 @@
+
+
+
 //-----------------------------------------------------------------
 // Background image
 //
 .bg-img {
-    position: relative;
-    border-bottom: none;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 0;
+  position: relative;
+  border-bottom: none;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
 }
 
 .bg-fixed {
-    background-attachment: fixed;
+  background-attachment: fixed;
 }
 
 // iOS can't render a cover and fixed image
 @media (max-width:640px) {
-    .bg-fixed {
-        background-attachment: initial;
-    }
+  .bg-fixed {
+    background-attachment: initial;
+  }
 }
 
 .bg-repeat {
-    background-repeat: repeat;
-    background-size: auto;
+  background-repeat: repeat;
+  background-size: auto;
 }
 
 .bg-img-left {
-    background-position: left center;
+  background-position: left center;
 }
 
 .bg-img-right {
-    background-position: right center;
+  background-position: right center;
 }
+
+
+
 
 //----------------------------------------------------/
 // Overlay
 //----------------------------------------------------/
+
 [data-overlay],
 [data-overlay-light] {
-    position: relative;
+  position: relative;
 }
-
 [data-overlay]::before,
 [data-overlay-light]::before {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #191919;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #191919;
 }
 
 [data-overlay-light]::before {
-    background: #fff;
+  background: #fff;
 }
 
+
 [data-overlay-primary]::before {
-    background: linear-gradient(-80deg, #9058FF, #00DCAD, #00BCDD);
-    background-size: 1000% 1000%;
-    -webkit-animation: Gradient 28s ease infinite;
-    -moz-animation: Gradient 28s ease infinite;
-    animation: Gradient 28s ease infinite;
+  background: $color-primary;
 }
+
 
 // Default overlay
 //
 @for $i from 1 through 9 {
-    [data-overlay="#{$i}"]::before {
-        opacity: $i / 10;
-    }
+  [data-overlay="#{$i}"]::before {
+    opacity: $i / 10;
+  }
 }
+
 
 // Light overlay
 //
 @for $i from 1 through 9 {
-    [data-overlay-light="#{$i}"]::before {
-        opacity: $i / 10;
-    }
+  [data-overlay-light="#{$i}"]::before {
+    opacity: $i / 10;
+  }
 }
+
